@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGUARETE KAA S.A.</title>
+    <link rel="shortcut icon" href="{% static 'img2.0/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'cart' dato=datos.1.nombre %}" class="main-header__btn">My Cart<i class="fas fa-shopping-cart"></i></a>
+        </nav>
+        <section class="textos-header">
+            <h1>Mejora la acustica y los tempos de tus partituras</h1>
+            <h2>Con los mejores instrumentos del mercado.</h2>
+        </section>
+
+            <main>
+                <main>
+                    <section class="contenedor sobre-nosotros">
+                        <h2 class="titulo">Acerca de Nosotros</h2>
+                        <div class="contenedor-sobre-nosotros">
+                            <img src="{% static 'recursosimg/about us.svg' %}" alt="" class="imagen-about-us">
+                            <div class="contenido-textos">
+                                <h3><span>1</span>Los mejores productos</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
+                                    consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                                    velit doloribus laboriosam ut.</p>
+                                <h3><span>2</span>Los mejores productos</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
+                                    consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                                    velit doloribus laboriosam ut.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="portafolio">
+                        <div class="contenedor">
+                            <h2 class="titulo">Nueva Mercancia</h2>
+                            <div class="galeria-port">
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Acustica1.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.0.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Acustica2.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.1.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Acustica3.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.2.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Electrica1.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.3.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Electrica2.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.4.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Electrica3.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.5.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/bajo1.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.6.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/bajo2.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.7.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/bajo3.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.8.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Amplificador1.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.9.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Amplificador2.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.10.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                                <div class="imagen-port">
+                                    <img src="{% static 'recursosimg/Amplificador3.jpg' %}" alt="">
+                                    <div class="hover-galeria">
+                                        <img src="{% static 'img2.0/click.png' %}" alt="">
+                                        <a href="{% url 'cart' dato=datos.11.nombre %}"><p>Comprar Ahora</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <div class="contenedor-footer">
+                            <div class="conten-foo">
+                                <h3>Contactanos</h3>
+                                <p>27.187.975</p>
+                            </div>
+                            <div class="conten-foo">
+                                <h3>Email</h3>
+                                <p>santiagocastellanos@hotmail.com</p>
+                            </div>
+                            <div class="conten-foo">
+                                <h3>Localizacion</h3>
+                                <p>Republica Bolivariana de Venezuela Edo.Miranda Charallave</p>
+                            </div>
+                        </div>
+                        <h2 class="titulo-final">&copy; Rhoinar Design | Santiago Castellanos </h2>
+                    </footer>
+                </main>
+            </body>
+            </html>

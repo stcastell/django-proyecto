@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGUARETE KAA S.A.</title>
+    <link rel="shortcut icon" href="{% static 'img2.0/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav>
+    <a href="{% url 'index' %}" class="main-header__btn">Volver al inicio</a>
+</nav>
+<section class="textos-header">
+    <h1>Bienvenido al carrito!</h1>
+    <h2>Vea y confirme los detalles de su compra</h2>
+</section>
+<main>
+	<div class="items">
+        <img src="{% static dato.3 %}">
+        <div class="data">
+            <h2>{{dato.0}}: {{dato.2}} USD.</h2>
+            <h2>{{dato.1}}</h2>
+            <a href="">Comprar</a>
+        </div>
+	</div>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="conten-foo">
+                <h3>Contactanos</h3>
+                <p>27.187.975</p>
+            </div>
+            <div class="conten-foo">
+                <h3>Email</h3>
+                <p>santiagocastellanos@hotmail.com</p>
+            </div>
+            <div class="conten-foo">
+               <h3>Localizacion</h3>
+                <p>Republica Bolivariana de Venezuela Edo.Miranda Charallave</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Rhoinar Design | Santiago Castellanos </h2>
+    </footer>
+</main>
+</body>
+</html>
